@@ -17074,3 +17074,278 @@
 2012-10-01 06:19:32.312-0700: --- STARTUP diagnostics END ---
 2012-10-01 06:19:32.320-0700: Extension org.neo4j.kernel.KernelExtension[kernel udc] loaded ok
 2012-10-01 06:19:32.387-0700: Extension org.neo4j.kernel.KernelExtension[kernel jmx] loaded ok
+2012-10-02 06:12:24.256-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore non clean shutdown detected
+2012-10-02 06:12:24.287-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.relationshiptypestore.db non clean shutdown detected
+2012-10-02 06:12:24.293-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.relationshiptypestore.db.names non clean shutdown detected
+2012-10-02 06:12:24.317-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db non clean shutdown detected
+2012-10-02 06:12:24.321-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.strings non clean shutdown detected
+2012-10-02 06:12:24.331-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.index non clean shutdown detected
+2012-10-02 06:12:24.333-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.index.keys non clean shutdown detected
+2012-10-02 06:12:24.339-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.arrays non clean shutdown detected
+2012-10-02 06:12:24.347-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.relationshipstore.db non clean shutdown detected
+2012-10-02 06:12:24.353-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.nodestore.db non clean shutdown detected
+2012-10-02 06:12:24.467-0700: Non clean shutdown detected on log [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log.1]. Recovery started ...
+2012-10-02 06:12:24.488-0700: [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log.1] logVersion=0 with committed tx=1
+2012-10-02 06:12:24.489-0700: [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log.1] entries found=0 lastEntryPos=16
+2012-10-02 06:12:24.491-0700: Internal recovery completed, scanned 0 log entries. Recovered 0 transactions. Last tx recovered: -1
+2012-10-02 06:12:24.492-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log] sorting 0 xids
+2012-10-02 06:12:24.494-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log] checkRecoveryComplete 0 xids
+2012-10-02 06:12:24.636-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.relationshiptypestore.db.names rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:24.760-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.index.keys rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:24.830-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.index rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:24.893-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.strings rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:24.951-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db.arrays rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:25.028-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.propertystore.db rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:25.105-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.relationshipstore.db rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:25.182-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore.nodestore.db rebuild id generator, highId=1 defragged count=0
+2012-10-02 06:12:25.260-0700: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore rebuild id generator, highId=6 defragged count=0
+2012-10-02 06:12:25.307-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log] recovery completed.
+2012-10-02 06:12:25.307-0700: Recovery on log [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log.1] completed.
+2012-10-02 06:12:25.492-0700: Non clean shutdown detected on log [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log.1]. Recovery started ...
+2012-10-02 06:12:25.492-0700: [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log.1] logVersion=0 with committed tx=1
+2012-10-02 06:12:25.492-0700: [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log.1] entries found=0 lastEntryPos=16
+2012-10-02 06:12:25.493-0700: Internal recovery completed, scanned 0 log entries. Recovered 0 transactions. Last tx recovered: -1
+2012-10-02 06:12:25.494-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log] sorting 0 xids
+2012-10-02 06:12:25.494-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log] checkRecoveryComplete 0 xids
+2012-10-02 06:12:25.494-0700: XaResourceManager[D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log] recovery completed.
+2012-10-02 06:12:25.494-0700: Recovery on log [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log.1] completed.
+2012-10-02 06:12:25.500-0700: TM opening log: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\tm_tx_log.1
+2012-10-02 06:12:25.573-0700: --- STARTUP diagnostics START ---
+2012-10-02 06:12:25.574-0700: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1348067005894, id:-4675686182938487832, store version: 13561656364791302]
+2012-10-02 06:12:25.579-0700: Kernel version: Neo4j - Graph Database Kernel 1.6
+2012-10-02 06:12:25.580-0700: Neo4j component versions:
+2012-10-02 06:12:25.582-0700:   Neo4j - Graph Database Kernel 1.6
+2012-10-02 06:12:25.589-0700: Diagnostics providers:
+    KernelDiagnostics:Versions
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    org.neo4j.kernel.Config
+    NEO_STORE_VERSIONS
+    NEO_STORE_ID_USAGE
+    KernelDiagnostics:StoreFiles
+2012-10-02 06:12:25.600-0700: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 1.02 GB
+    Committed virtual memory: 172.78 MB
+    Total swap space: 8.00 GB
+    Free swap space: 4.23 GB
+2012-10-02 06:12:25.621-0700: JVM memory information:
+    Free  memory: 45.75 MB
+    Total memory: 79.94 MB
+    Max   memory: 910.25 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.22 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=31.75 MB, used=26.30 MB, max=330.63 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=5.50 MB, used=3.07 MB, max=5.50 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=42.69 MB, used=4.82 MB, max=682.69 MB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.75 MB, used=18.51 MB, max=82.00 MB, threshold=0.00 B
+2012-10-02 06:12:25.712-0700: Operating system information:
+    Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 2
+    Process id: 5308@lappy
+    Byte order: LITTLE_ENDIAN
+2012-10-02 06:12:25.784-0700: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 21.0-b17
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: []
+2012-10-02 06:12:25.793-0700: Java classpath:
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/dnsns.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-jdbc-3.1.2.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-context-support-3.1.0.RELEASE.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/zipfs.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-jmx-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-asm-3.1.0.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/classes/
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-lucene-index-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-graph-algo-1.6.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunec.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/slf4j-api-1.6.4.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-asm-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-websocket-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/slf4j-simple-1.6.4.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-jmx-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-common-2.4.3.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/localedata.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-expression-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-io-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/aopalliance-1.0.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-udc-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-aspects-3.1.2.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-data-commons-core-1.2.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jsr250-api-1.0.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/validation-api-1.0.0.GA.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\rt.jar
+     [loader.1] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/dependency/jetty-runner.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-cypher-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-util-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-tx-3.1.2.RELEASE.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\jsse.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-server-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-http-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/asm-3.1.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\sunrsasign.jar
+     [bootstrap] D:\Program Files\Java\jre7\classes
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-orm-3.1.2.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/hibernate-validator-4.2.0.Final.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-graph-matching-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-servlets-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-websocket-jetty-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-webmvc-3.1.0.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-data-neo4j-2.1.0.BUILD-SNAPSHOT.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\jce.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/javax.inject-1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-continuation-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/scala-library-2.9.0-1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/bayeux-api-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-expression-3.1.0.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-cypher-dsl-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-kernel-1.6.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunmscapi.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-annotations-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/aspectjrt-1.6.9.jar
+     [classpath] D:\Users\josterholt_2\Projects\FantasyStrategy - new\target\dependency\jetty-runner.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/lucene-core-3.5.0.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunjce_provider.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.0.Final.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\resources.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\charsets.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/commons-logging-1.1.1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cglib-2.2.jar
+2012-10-02 06:12:25.826-0700: Library path:
+    C:\Windows\System32
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+    D:\Program Files (x86)\PHP
+    C:\Program Files\Common Files\Microsoft Shared\Windows Live
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    D:\Program Files\SlikSvn\bin
+    C:\Program Files (x86)\Java\jdk1.6.0_26\bin
+    D:\web_dev\ZendFramework-1.11.10\bin
+    D:\cygwin\bin
+    D:\Program Files (x86)\Heroku
+    C:\Program Files (x86)\Git\bin
+    C:\Program Files (x86)\Git\cmd
+    D:\Program Files\apache-maven-3.0.3\bin
+    C:\Program Files\MySQL\MySQL Server 5.5\bin
+    D:\Program Files (x86)\Python32
+    C:\Users\josterholt_2\Misc Code\Chrome\depot_tools
+    D:\Program Files\neo4j\bin
+    D:\Users\josterholt_2\Projects\FantasyStrategy - new
+2012-10-02 06:12:25.867-0700: System.properties:
+    sun.boot.library.path = D:\Program Files\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = 
+    user.dir = D:\Users\josterholt_2\Projects\FantasyStrategy - new
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\josterholt_2
+    user.timezone = America/Los_Angeles
+    file.encoding = Cp1252
+    user.name = josterholt_2
+    sun.java.command = target/dependency/jetty-runner.jar target/cometd-archetype-spring-jquery-jetty7-2.4.3.war
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2012-10-02 06:12:25.894-0700: Neo4j Kernel properties:
+    store_dir=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db
+    logical_log=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log
+    node_auto_indexing=false
+    neostore.relationshipstore.db.mapped_memory=100M
+    neostore.nodestore.db.mapped_memory=20M
+    use_memory_mapped_buffers=false
+    rebuild_idgenerators_fast=true
+    neostore.propertystore.db.index.keys.mapped_memory=1M
+    neostore.propertystore.db.arrays.mapped_memory=130M
+    neostore.propertystore.db.strings.mapped_memory=130M
+    neo_store=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore
+    neostore.propertystore.db.index.mapped_memory=1M
+    create=true
+    neostore.propertystore.db.mapped_memory=90M
+    relationship_auto_indexing=false
+2012-10-02 06:12:25.897-0700: Store versions:
+    NeoStore v0.A.0
+    NodeStore v0.A.0
+    RelationshipStore v0.A.0
+    RelationshipTypeStore v0.A.0
+    PropertyStore v0.A.0
+    PropertyIndexStore v0.A.0
+    StringPropertyStore v0.A.0
+    ArrayPropertyStore v0.A.0
+2012-10-02 06:12:25.897-0700: Id usage:
+    NodeStore: used=1 high=0
+    RelationshipStore: used=1 high=0
+    RelationshipTypeStore: used=0 high=-1
+    PropertyStore: used=1 high=0
+    PropertyIndexStore: used=1 high=0
+    StringPropertyStore: used=1 high=0
+    ArrayPropertyStore: used=1 high=0
+2012-10-02 06:12:25.899-0700: Storage files:
+    active_tx_log: 11.00 B
+    index:
+      lucene-store.db: 40.00 B
+      lucene.log.1: 16.00 B
+      lucene.log.active: 4.00 B
+    - Total: 60.00 B
+    lock: 0.00 B
+    messages.log: 1.37 MB
+    neostore: 54.00 B
+    neostore.id: 9.00 B
+    neostore.nodestore.db: 9.00 B
+    neostore.nodestore.db.id: 9.00 B
+    neostore.propertystore.db: 41.00 B
+    neostore.propertystore.db.arrays: 128.00 B
+    neostore.propertystore.db.arrays.id: 9.00 B
+    neostore.propertystore.db.id: 9.00 B
+    neostore.propertystore.db.index: 9.00 B
+    neostore.propertystore.db.index.id: 9.00 B
+    neostore.propertystore.db.index.keys: 38.00 B
+    neostore.propertystore.db.index.keys.id: 9.00 B
+    neostore.propertystore.db.strings: 128.00 B
+    neostore.propertystore.db.strings.id: 9.00 B
+    neostore.relationshipstore.db: 33.00 B
+    neostore.relationshipstore.db.id: 9.00 B
+    neostore.relationshiptypestore.db: 0.00 B
+    neostore.relationshiptypestore.db.id: 9.00 B
+    neostore.relationshiptypestore.db.names: 38.00 B
+    neostore.relationshiptypestore.db.names.id: 9.00 B
+    nioneo_logical.log.1: 16.00 B
+    nioneo_logical.log.active: 4.00 B
+    tm_tx_log.1: 0.00 B
+2012-10-02 06:12:25.908-0700: --- STARTUP diagnostics END ---
+2012-10-02 06:12:26.570-0700: Extension org.neo4j.kernel.KernelExtension[kernel jmx] loaded ok
+2012-10-02 06:12:26.577-0700: Extension org.neo4j.kernel.KernelExtension[kernel udc] loaded ok
+2012-10-02 06:13:29.229-0700: Closed log D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log
+2012-10-02 06:13:30.267-0700: NeoStore closed
+2012-10-02 06:13:30.310-0700: Closed log D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log
+2012-10-02 06:13:30.312-0700: NeoStore closed
+2012-10-02 06:13:30.328-0700: TM shutting down
