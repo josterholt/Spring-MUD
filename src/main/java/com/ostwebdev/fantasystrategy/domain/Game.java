@@ -1,7 +1,7 @@
 package com.ostwebdev.fantasystrategy.domain;
 
-import inactive_domain.Account;
-import inactive_domain.Character;
+import com.ostwebdev.fantasystrategy.domain.Account;
+import com.ostwebdev.fantasystrategy.domain.Character;
 
 public class Game {
 	public static Game instance;
