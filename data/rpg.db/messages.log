@@ -17349,3 +17349,339 @@
 2012-10-02 06:13:30.310-0700: Closed log D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log
 2012-10-02 06:13:30.312-0700: NeoStore closed
 2012-10-02 06:13:30.328-0700: TM shutting down
+2012-10-03 06:03:07.987-0700: Opened [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log.1] clean empty log, version=0, lastTxId=1
+2012-10-03 06:03:08.248-0700: Opened [D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log.1] clean empty log, version=0, lastTxId=1
+2012-10-03 06:03:08.292-0700: TM opening log: D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\tm_tx_log.1
+2012-10-03 06:03:08.357-0700: --- STARTUP diagnostics START ---
+2012-10-03 06:03:08.357-0700: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId[time:1348067005894, id:-4675686182938487832, store version: 13561656364791302]
+2012-10-03 06:03:08.362-0700: Kernel version: Neo4j - Graph Database Kernel 1.6
+2012-10-03 06:03:08.363-0700: Neo4j component versions:
+2012-10-03 06:03:08.365-0700:   Neo4j - Graph Database Kernel 1.6
+2012-10-03 06:03:08.372-0700: Diagnostics providers:
+    KernelDiagnostics:Versions
+    org.neo4j.kernel.info.DiagnosticsManager
+    SYSTEM_MEMORY
+    JAVA_MEMORY
+    OPERATING_SYSTEM
+    JAVA_VIRTUAL_MACHINE
+    CLASSPATH
+    LIBRARY_PATH
+    SYSTEM_PROPERTIES
+    org.neo4j.kernel.Config
+    NEO_STORE_VERSIONS
+    NEO_STORE_ID_USAGE
+    KernelDiagnostics:StoreFiles
+2012-10-03 06:03:08.382-0700: System memory information:
+    Total Physical memory: 4.00 GB
+    Free Physical memory: 1.29 GB
+    Committed virtual memory: 174.19 MB
+    Total swap space: 8.00 GB
+    Free swap space: 3.85 GB
+2012-10-03 06:03:08.411-0700: JVM memory information:
+    Free  memory: 49.59 MB
+    Total memory: 80.06 MB
+    Max   memory: 910.25 MB
+    Garbage Collector: PS Scavenge: [PS Eden Space, PS Survivor Space]
+    Garbage Collector: PS MarkSweep: [PS Eden Space, PS Survivor Space, PS Old Gen, PS Perm Gen]
+    Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=1.27 MB, max=48.00 MB, threshold=0.00 B
+    Memory Pool: PS Eden Space (Heap memory): committed=31.88 MB, used=21.99 MB, max=330.50 MB, threshold=?
+    Memory Pool: PS Survivor Space (Heap memory): committed=5.50 MB, used=3.05 MB, max=5.50 MB, threshold=?
+    Memory Pool: PS Old Gen (Heap memory): committed=42.69 MB, used=5.43 MB, max=682.69 MB, threshold=0.00 B
+    Memory Pool: PS Perm Gen (Non-heap memory): committed=20.75 MB, used=18.44 MB, max=82.00 MB, threshold=0.00 B
+2012-10-03 06:03:08.484-0700: Operating system information:
+    Operating System: Windows 7; version: 6.1; arch: amd64; cpus: 2
+    Process id: 6612@lappy
+    Byte order: LITTLE_ENDIAN
+2012-10-03 06:03:08.512-0700: JVM information:
+    VM Name: Java HotSpot(TM) 64-Bit Server VM
+    VM Vendor: Oracle Corporation
+    VM Version: 21.0-b17
+    JIT compiler: HotSpot 64-Bit Tiered Compilers
+    VM Arguments: []
+2012-10-03 06:03:08.533-0700: Java classpath:
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/dnsns.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-context-support-3.1.0.RELEASE.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/zipfs.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-jmx-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-asm-3.1.0.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/classes/
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-jmx-1.7.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-lucene-index-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-graph-algo-1.6.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunec.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/slf4j-api-1.6.4.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-data-neo4j-2.1.0.RC1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-websocket-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/slf4j-simple-1.6.4.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-beans-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/hamcrest-core-1.1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-common-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-orm-3.2.0.M2.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/localedata.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-io-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/aopalliance-1.0.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-core-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-udc-1.7.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jsr250-api-1.0.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/validation-api-1.0.0.GA.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\rt.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-jdbc-3.2.0.M2.jar
+     [loader.1] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/dependency/jetty-runner.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-cypher-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-util-7.6.4.v20120524.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\jsse.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-graph-matching-1.7.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-server-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-http-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/asm-3.1.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\sunrsasign.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-1.7.jar
+     [bootstrap] D:\Program Files\Java\jre7\classes
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/junit-dep-4.8.2.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/hibernate-validator-4.2.0.Final.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-servlets-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-websocket-jetty-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-webmvc-3.1.0.RELEASE.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\jce.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/javax.inject-1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/jetty-continuation-7.6.4.v20120524.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/scala-library-2.9.0-1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-aspects-3.2.0.M2.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/bayeux-api-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-expression-3.1.0.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-cypher-dsl-1.6.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-aop-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/neo4j-kernel-1.6.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunmscapi.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cometd-java-annotations-2.4.3.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-web-3.1.1.RELEASE.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/aspectjrt-1.6.9.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-tx-3.2.0.M2.jar
+     [classpath] D:\Users\josterholt_2\Projects\FantasyStrategy - new\target\dependency\jetty-runner.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/lucene-core-3.5.0.jar
+     [loader.2] file:/D:/Program%20Files/Java/jre7/lib/ext/sunjce_provider.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-data-commons-core-1.3.0.RC2.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/spring-context-3.1.1.RELEASE.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\resources.jar
+     [bootstrap] D:\Program Files\Java\jre7\lib\charsets.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/commons-logging-1.1.1.jar
+     [loader.0] file:/D:/Users/josterholt_2/Projects/FantasyStrategy%20-%20new/target/cometd-archetype-spring-jquery-jetty7-2.4.3/WEB-INF/lib/cglib-2.2.jar
+2012-10-03 06:03:08.574-0700: Library path:
+    C:\Windows\System32
+    C:\Windows\Sun\Java\bin
+    C:\Windows\System32
+    C:\Windows
+    C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+    D:\Program Files (x86)\PHP
+    C:\Program Files\Common Files\Microsoft Shared\Windows Live
+    C:\Windows\System32
+    C:\Windows
+    C:\Windows\System32\wbem
+    C:\Windows\System32\WindowsPowerShell\v1.0
+    D:\Program Files\SlikSvn\bin
+    C:\Program Files (x86)\Java\jdk1.6.0_26\bin
+    D:\web_dev\ZendFramework-1.11.10\bin
+    D:\cygwin\bin
+    D:\Program Files (x86)\Heroku
+    C:\Program Files (x86)\Git\bin
+    C:\Program Files (x86)\Git\cmd
+    D:\Program Files\apache-maven-3.0.3\bin
+    C:\Program Files\MySQL\MySQL Server 5.5\bin
+    D:\Program Files (x86)\Python32
+    C:\Users\josterholt_2\Misc Code\Chrome\depot_tools
+    D:\Program Files\neo4j\bin
+    D:\Users\josterholt_2\Projects\FantasyStrategy - new
+2012-10-03 06:03:08.676-0700: System.properties:
+    sun.boot.library.path = D:\Program Files\Java\jre7\bin
+    path.separator = ;
+    file.encoding.pkg = sun.io
+    user.country = US
+    user.script = 
+    sun.java.launcher = SUN_STANDARD
+    sun.os.patch.level = 
+    user.dir = D:\Users\josterholt_2\Projects\FantasyStrategy - new
+    user.variant = 
+    sun.jnu.encoding = Cp1252
+    sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+    user.home = C:\Users\josterholt_2
+    user.timezone = America/Los_Angeles
+    file.encoding = Cp1252
+    user.name = josterholt_2
+    sun.java.command = target/dependency/jetty-runner.jar target/cometd-archetype-spring-jquery-jetty7-2.4.3.war
+    sun.arch.data.model = 64
+    user.language = en
+    awt.toolkit = sun.awt.windows.WToolkit
+    file.separator = \
+    sun.io.unicode.encoding = UnicodeLittle
+    sun.cpu.endian = little
+    sun.desktop = windows
+    sun.cpu.isalist = amd64
+2012-10-03 06:03:08.698-0700: Neo4j Kernel properties:
+    store_dir=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db
+    logical_log=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log
+    node_auto_indexing=false
+    neostore.relationshipstore.db.mapped_memory=100M
+    neostore.nodestore.db.mapped_memory=20M
+    use_memory_mapped_buffers=false
+    rebuild_idgenerators_fast=true
+    neostore.propertystore.db.index.keys.mapped_memory=1M
+    neostore.propertystore.db.arrays.mapped_memory=130M
+    neostore.propertystore.db.strings.mapped_memory=130M
+    neo_store=D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\neostore
+    neostore.propertystore.db.index.mapped_memory=1M
+    create=true
+    neostore.propertystore.db.mapped_memory=90M
+    relationship_auto_indexing=false
+2012-10-03 06:03:08.700-0700: Store versions:
+    NeoStore v0.A.0
+    NodeStore v0.A.0
+    RelationshipStore v0.A.0
+    RelationshipTypeStore v0.A.0
+    PropertyStore v0.A.0
+    PropertyIndexStore v0.A.0
+    StringPropertyStore v0.A.0
+    ArrayPropertyStore v0.A.0
+2012-10-03 06:03:08.700-0700: Id usage:
+    NodeStore: used=1 high=0
+    RelationshipStore: used=1 high=0
+    RelationshipTypeStore: used=0 high=-1
+    PropertyStore: used=1 high=0
+    PropertyIndexStore: used=1 high=0
+    StringPropertyStore: used=1 high=0
+    ArrayPropertyStore: used=1 high=0
+2012-10-03 06:03:08.702-0700: Storage files:
+    active_tx_log: 11.00 B
+    index:
+      lucene-store.db: 40.00 B
+      lucene.log.1: 16.00 B
+      lucene.log.active: 4.00 B
+    - Total: 60.00 B
+    lock: 0.00 B
+    messages.log: 1.39 MB
+    neostore: 54.00 B
+    neostore.id: 9.00 B
+    neostore.nodestore.db: 9.00 B
+    neostore.nodestore.db.id: 9.00 B
+    neostore.propertystore.db: 41.00 B
+    neostore.propertystore.db.arrays: 128.00 B
+    neostore.propertystore.db.arrays.id: 9.00 B
+    neostore.propertystore.db.id: 9.00 B
+    neostore.propertystore.db.index: 9.00 B
+    neostore.propertystore.db.index.id: 9.00 B
+    neostore.propertystore.db.index.keys: 38.00 B
+    neostore.propertystore.db.index.keys.id: 9.00 B
+    neostore.propertystore.db.strings: 128.00 B
+    neostore.propertystore.db.strings.id: 9.00 B
+    neostore.relationshipstore.db: 33.00 B
+    neostore.relationshipstore.db.id: 9.00 B
+    neostore.relationshiptypestore.db: 0.00 B
+    neostore.relationshiptypestore.db.id: 9.00 B
+    neostore.relationshiptypestore.db.names: 38.00 B
+    neostore.relationshiptypestore.db.names.id: 9.00 B
+    nioneo_logical.log.1: 16.00 B
+    nioneo_logical.log.active: 4.00 B
+    tm_tx_log.1: 0.00 B
+2012-10-03 06:03:08.713-0700: --- STARTUP diagnostics END ---
+2012-10-03 06:03:09.170-0700: Failed to load extension org.neo4j.kernel.KernelExtension[kernel jmx] org.neo4j.kernel.KernelData.graphDatabase()Lorg/neo4j/kernel/GraphDatabaseAPI;
+java.lang.NoSuchMethodError: org.neo4j.kernel.KernelData.graphDatabase()Lorg/neo4j/kernel/GraphDatabaseAPI;
+	at org.neo4j.jmx.impl.KernelBean.getNeoDataSource(KernelBean.java:77)
+	at org.neo4j.jmx.impl.KernelBean.<init>(KernelBean.java:47)
+	at org.neo4j.jmx.impl.JmxExtension.load(JmxExtension.java:57)
+	at org.neo4j.jmx.impl.JmxExtension.load(JmxExtension.java:38)
+	at org.neo4j.kernel.KernelData.loadExtensions(KernelData.java:177)
+	at org.neo4j.kernel.EmbeddedGraphDbImpl$2.load(EmbeddedGraphDbImpl.java:186)
+	at org.neo4j.kernel.EmbeddedGraphDbImpl.<init>(EmbeddedGraphDbImpl.java:199)
+	at org.neo4j.kernel.EmbeddedGraphDatabase.<init>(EmbeddedGraphDatabase.java:77)
+	at org.neo4j.kernel.EmbeddedGraphDatabase.<init>(EmbeddedGraphDatabase.java:61)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:110)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:280)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1035)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:939)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:353)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1015)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:911)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:322)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1360)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:848)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:790)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:707)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:478)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1106)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:631)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:588)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:645)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:508)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:449)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:133)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:241)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:436)
+	at org.eclipse.jetty.servlet.ServletHolder.doStart(ServletHolder.java:260)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:58)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:765)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:245)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1208)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:586)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:449)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:58)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:164)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:58)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:224)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:58)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:89)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:258)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:58)
+	at org.mortbay.jetty.runner.Runner.run(Runner.java:447)
+	at org.mortbay.jetty.runner.Runner.main(Runner.java:586)
+2012-10-03 06:03:10.167-0700: Closed log D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\nioneo_logical.log
+2012-10-03 06:03:11.418-0700: NeoStore closed
+2012-10-03 06:03:11.462-0700: Closed log D:\Users\josterholt_2\Projects\FantasyStrategy - new\data\rpg.db\index\lucene.log
+2012-10-03 06:03:11.463-0700: NeoStore closed
+2012-10-03 06:03:11.479-0700: TM shutting down

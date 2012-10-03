@@ -29,6 +29,14 @@ public class BaseStat {
 		_buffValue = value;
 	}
 	
+	public float getLevelModifier() {
+		return this._levelModifier;
+	}
+	
+	public void setLevelModifier(float value) {
+		this._levelModifier = value;
+	}
+	
 	public int getExpToLevel() {
 		return this._expToLevel;
 	}

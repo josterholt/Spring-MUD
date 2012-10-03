@@ -21,4 +21,10 @@ public class Character {
 		}
 		throw new Exception("Invalid attribute");
 	}
+
+
+	public Object getAvailableQuests() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
