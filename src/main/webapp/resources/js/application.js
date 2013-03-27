@@ -54,7 +54,7 @@
                 {
                     cometd.subscribe('/service/command', function(message)
                     {
-                        $('#body').append('<div>Server Says: ' + message.data.name + '</div>');
+                        $('#body').append('<div>Server Says: ' + message.data.message + '</div>');
                     });
                 });
             }
@@ -82,6 +82,6 @@
 function sendCommand(frm)
 {
 	var txt = frm.elements['hud_input'].value;
-	var arguments = txt.split(" ", 1);
+	var arguments = txt.split(" ", 2);
     $.cometd.publish('/service/command', { action: arguments[0], target: 'LOCAL_AREA', parameters: arguments[1] });
 }

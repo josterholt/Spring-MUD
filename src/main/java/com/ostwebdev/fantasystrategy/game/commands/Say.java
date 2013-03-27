@@ -8,7 +8,7 @@ public class Say implements Command {
 		System.out.println(parameters);
 		ActionResponse response = new ActionResponse();
 		response.setCallback("say");
-		response.setParameter("message", "test");
+		response.setParameter("message", "Player says: " + parameters);
 		return response;
 	}
 }

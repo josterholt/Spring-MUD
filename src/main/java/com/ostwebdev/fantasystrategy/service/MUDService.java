@@ -1,7 +1,7 @@
 package com.ostwebdev.fantasystrategy.service;
 
 import java.util.Map;
-
+import org.apache.commons.lang.WordUtils;
 import org.cometd.bayeux.server.BayeuxServer;
 import org.cometd.bayeux.server.ServerSession;
 import org.cometd.server.AbstractService;
@@ -23,7 +23,7 @@ public class MUDService extends AbstractService
 		System.out.println(data.get("action"));
 		System.out.println(data.get("target"));
 		System.out.println(data.get("parameters"));
-		runner.Execute((String) data.get("action"), (String) data.get("target"), (String) data.get("parameters"));
+		runner.Execute(WordUtils.capitalize(data.get("action").toString().toLowerCase()), (String) data.get("target"), (String) data.get("parameters"));
 		
 		remote.deliver(getServerSession(), "/service/command", (Object) runner.output, null);
 	}

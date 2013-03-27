@@ -13,7 +13,43 @@
 		  <id>spring-milestone</id>
 		  <name>Spring Maven MILESTONE Repository</name>
 		  <url>http://maven.springframework.org/milestone</url>
-		</repository>   
+		</repository>
+
+			<repository>
+            <id>spring-maven-snapshot</id>
+            <name>Spring Maven Snapshot Repository</name>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>http://maven.springframework.org/snapshot</url>
+        </repository>
+        <repository>
+            <id>spring-maven-milestone</id>
+            <name>Spring Maven Milestone Repository</name>
+            <url>http://maven.springframework.org/milestone</url>
+        </repository>
+	    <repository>
+	      <id>neo4j-release-repository</id>
+	      <name>Neo4j Maven 2 release repository</name>
+	      <url>http://m2.neo4j.org/releases</url>
+	      <releases>
+	        <enabled>true</enabled>
+	      </releases>
+	      <snapshots>
+	        <enabled>false</enabled>
+	      </snapshots>
+	    </repository>
+	    <repository>
+	      <id>neo4j-snapshot-repository</id>
+	      <name>Neo4j Maven 2 snapshot repository</name>
+	      <url>http://m2.neo4j.org/snapshots</url>
+	      <snapshots>
+	        <enabled>true</enabled>
+	      </snapshots>
+	      <releases>
+	        <enabled>false</enabled>
+	      </releases>
+	    </repository>
     </repositories>
 
     <build>
@@ -47,7 +83,7 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webAppConfig>
-                        <contextPath>/fantasy</contextPath>
+                        <contextPath>/</contextPath>
                     </webAppConfig>
                 </configuration>
             </plugin>
@@ -139,23 +175,23 @@
         <dependency>
         	<groupId>org.neo4j</groupId>
         	<artifactId>neo4j-kernel</artifactId>
-        	<version>1.6</version>
+        	<version>1.8.2</version>
         </dependency>
         <dependency>
         	<groupId>org.neo4j</groupId>
         	<artifactId>neo4j-cypher</artifactId>
-        	<version>1.6</version>
+        	<version>1.8.2</version>
         </dependency>
         <dependency>
         	<groupId>org.neo4j</groupId>
         	<artifactId>neo4j-cypher-dsl</artifactId>
-        	<version>1.6</version>
+        	<version>1.8</version>
         </dependency>
         <dependency>
         	<groupId>org.springframework.data</groupId>
         	<artifactId>spring-data-neo4j</artifactId>
-        	<version>2.1.0.RC1</version>
-        </dependency>
+        	<version>2.1.0.RELEASE</version>
+        </dependency>        
         <dependency>
         	<groupId>org.springframework</groupId>
         	<artifactId>spring-webmvc</artifactId>
@@ -175,6 +211,21 @@
         	<groupId>org.hibernate</groupId>
         	<artifactId>hibernate-validator</artifactId>
         	<version>4.2.0.Final</version>
+        </dependency>
+        <dependency>
+        	<groupId>javax.servlet</groupId>
+        	<artifactId>jstl</artifactId>
+        	<version>1.2</version>
+        </dependency>
+        <dependency>
+        	<groupId>javax.servlet.jsp</groupId>
+        	<artifactId>jsp-api</artifactId>
+        	<version>2.1</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.springframework.data</groupId>
+        	<artifactId>spring-data-neo4j-rest</artifactId>
+        	<version>2.1.0.RELEASE</version>
         </dependency>
     </dependencies>
 
