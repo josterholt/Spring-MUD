@@ -24,9 +24,11 @@
     <mvc:annotation-driven />
 	<context:annotation-config />
 
-    <neo4j:config graphDatabaseService="graphDatabaseService"/>
+    <neo4j:config graphDatabaseService="graphDatabaseService" />
     <bean id="graphDatabaseService" class="org.springframework.data.neo4j.rest.SpringRestGraphDatabase">
-        <constructor-arg value="http://localhost:7474/db/data/"/>
+        <constructor-arg value="http://8b88bd270.hosted.neo4j.org:7415/db/data/" index="0" />
+        <constructor-arg value="6f3542069" index="1" />
+        <constructor-arg value="f45c5c040" index="2" />
     </bean>
     <!--  neo4j:config storeDirectory="data/rpg.db"/ -->
     <neo4j:repositories base-package="com.ostwebdev.fantasystrategy.repository" />

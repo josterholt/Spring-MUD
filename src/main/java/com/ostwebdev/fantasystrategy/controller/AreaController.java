@@ -29,7 +29,7 @@ public class AreaController {
 	}
 	
 	@RequestMapping(value = "/areas/{id}", method = RequestMethod.GET)
-	public String areas(Model model, @PathVariable String id) {
+	public String areas(Model model, @PathVariable Long id) {
 		Area area = areaRepository.findById(id);
 		
 		model.addAttribute("area", area);
