@@ -18,7 +18,7 @@ public class Neo4jDatabasePopulator {
 	
 	
 	public void populateDatabase() {
-		Area area1 = new Area("test", "Test Area");
+		Area area1 = new Area((long) 1, "Test Area");
 		areaRepository.save(area1);		
 		
 		/*

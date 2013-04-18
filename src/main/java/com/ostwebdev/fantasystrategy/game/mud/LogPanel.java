@@ -5,8 +5,7 @@ import java.util.Hashtable;
 
 public class LogPanel extends Panel implements IObserver<PlayerRegistry> {
 
-    @Override
-    public void notify(PlayerRegistry playerRegistry, Event event) {
+	public void notify(PlayerRegistry playerRegistry, Event event) {
         /*
         ArrayList<Hashtable> players = new ArrayList();
         for(Unit player : playerRegistry.getPlayers()) {

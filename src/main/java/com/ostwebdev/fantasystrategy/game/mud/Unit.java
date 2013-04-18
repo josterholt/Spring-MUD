@@ -8,12 +8,10 @@ public class Unit implements ISubject {
     Hashtable properties = new Hashtable();
     ArrayList<IObserver> _observers = new ArrayList();
 
-    @Override
     public void addObserver(IObserver observer) {
         this._observers.add(observer);
     }
 
-    @Override
     public void fireEvent(Event event) {
         for(IObserver observer : this._observers) {
             observer.notify(this, event);

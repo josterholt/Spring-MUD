@@ -90,13 +90,13 @@ public class AdminController {
 	@RequestMapping(value = "/admin/populate-data", method= RequestMethod.GET)
 	public String importQuests(Model model) {
 		 
-		populator.populateDatabase();
+		//populator.populateDatabase();
 		return "redirect:/admin?success=true";
 	}
 	
 	@RequestMapping(value = "/admin/clean-data", method = RequestMethod.GET)
 	public ModelAndView clean(Model model) {
-		populator.cleanDb();
+		//populator.cleanDb();
 		return new ModelAndView("redirect:/admin?success=true");
 		//return "redirect:/admin";
 	}
