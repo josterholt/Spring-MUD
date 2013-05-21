@@ -7,29 +7,45 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.conversion.EndResult;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.ostwebdev.fantasystrategy.domain.Area;
+import com.ostwebdev.fantasystrategy.domain.User;
 import com.ostwebdev.fantasystrategy.repository.AreaRepository;
 import com.ostwebdev.fantasystrategy.service.Neo4jDatabasePopulator;
 
 @Controller
+@SessionAttributes({"user"})
 public class AdminController {
 	//@Autowired
 	//private Neo4jDatabasePopulator populator;
 	@Autowired
 	private AreaRepository areaRepository;
 	
+	@RequestMapping(value = "/user-init", method = RequestMethod.GET)
+	public String userInit(ModelMap modelMap) {
+		User user = new User();
+		user.id = 1234;
+		user.foo = 0;
+		modelMap.addAttribute(user);
+		return "admin/home";
+	}
+
+	
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	public String home(@RequestParam(required=false) boolean success, Model model) {
+	public String home(@RequestParam(required=false) boolean success, Model model, @ModelAttribute User user) {
 		if(success) {
 			model.addAttribute("successMessage", "Record Updated");
 		}
+		user.foo++;
+		System.out.println(user.foo);
 		return "admin/home";
 	}
 

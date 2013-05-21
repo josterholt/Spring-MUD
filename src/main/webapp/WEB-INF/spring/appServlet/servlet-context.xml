@@ -32,4 +32,8 @@
     </bean>
     <!--  neo4j:config storeDirectory="data/rpg.db"/ -->
     <neo4j:repositories base-package="com.ostwebdev.fantasystrategy.repository" />
+        
+
+   
+    <bean id="user" class="com.ostwebdev.fantasystrategy.domain.User" scope="session" />
 </beans>
