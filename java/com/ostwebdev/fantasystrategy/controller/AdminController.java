@@ -5,9 +5,13 @@ import java.util.Locale;
 import java.awt.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.conversion.EndResult;
+import org.springframework.data.neo4j.repository.GraphRepository;
+import org.springframework.data.neo4j.repository.GraphRepositoryFactory;
+import org.springframework.data.neo4j.template.Neo4jOperations;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,18 +20,19 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ostwebdev.fantasystrategy.domain.Area;
-import com.ostwebdev.fantasystrategy.domain.User;
+import com.ostwebdev.fantasystrategy.domain.*;
+import com.ostwebdev.fantasystrategy.repository.QuestRepository;
 import com.ostwebdev.fantasystrategy.repository.AreaRepository;
-import com.ostwebdev.fantasystrategy.service.Neo4jDatabasePopulator;
+//import com.ostwebdev.fantasystrategy.repository.*;
 
 @Controller
 @SessionAttributes({"user"})
 public class AdminController {
 	//@Autowired
 	//private Neo4jDatabasePopulator populator;
-	@Autowired
-	private AreaRepository areaRepository;
+	@Autowired private AreaRepository areaRepository;
+	@Autowired private Neo4jOperations template;
+	
 	
 	@RequestMapping(value = "/user-init", method = RequestMethod.GET)
 	public String userInit(ModelMap modelMap) {
@@ -44,8 +49,6 @@ public class AdminController {
 		if(success) {
 			model.addAttribute("successMessage", "Record Updated");
 		}
-		user.foo++;
-		System.out.println(user.foo);
 		return "admin/home";
 	}
 
@@ -55,7 +58,7 @@ public class AdminController {
 		model.addAttribute("areas",areas.iterator());
 		return "admin/area/areaList";
 	}
-
+	
 	@RequestMapping(value = "/admin/area/{id}", method = RequestMethod.GET)
 	public String area(@ModelAttribute("area") Area area, @PathVariable Long id, Model model) throws Exception {
 		if(id != 0) {
@@ -85,35 +88,23 @@ public class AdminController {
 		}		
 		
 		area.setName(name);
-		//area.setCoords(x, y);
 		area.setX(x);
 		area.setY(y);
 		areaRepository.save(area);
-		/*
-		Area area;
-		area = areaRepository.findByCoords(x, y);
-		if(area == null) {
-			area = new Area();
-			area.setName(name);
-			area.setY(y);
-			area.setX(x);			
-		}
-		areaRepository.save(area);		
-		*/
-		return "admin/area/areaList";
-	}	
 
-	@RequestMapping(value = "/admin/populate-data", method= RequestMethod.GET)
-	public String importQuests(Model model) {
-		 
-		//populator.populateDatabase();
-		return "redirect:/admin?success=true";
+		return "admin/area/areaList";
 	}
 	
-	@RequestMapping(value = "/admin/clean-data", method = RequestMethod.GET)
-	public ModelAndView clean(Model model) {
-		//populator.cleanDb();
-		return new ModelAndView("redirect:/admin?success=true");
-		//return "redirect:/admin";
+	@RequestMapping(value = "/admin/{type}", method = RequestMethod.GET)
+	public String area(Model model, @PathVariable String type) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+		template.repositoryFor(Class.forName("com.ostwebdev.fantasystrategy.domain." + StringUtils.capitalize(type)));
+		
+		//GraphRepository<?> repo = (GraphRepository<?>) grf.getRepository(Class.forName(StringUtils.capitalize(type) + "Repository"));
+		
+		//GraphRepository<?> repo = GraphRepository.class.cast(testRepo);  
+ 
+		//EndResult<?> areas = repo.findAll();
+		//model.addAttribute("areas",areas.iterator());
+		return "admin/area/areaList";
 	}
 }

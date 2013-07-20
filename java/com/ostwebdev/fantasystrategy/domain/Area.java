@@ -17,14 +17,12 @@ import scala.collection.generic.BitOperations.Int;
 @NodeEntity
 @TypeAlias("Area")
 public class Area {
-	@GraphId Long id;
-	//Long id;
+	@GraphId private Long id;
 	
 	@Indexed(indexType=IndexType.SIMPLE, indexName = "area")	
 	String x;
 	@Indexed(indexType=IndexType.SIMPLE, indexName = "area")	
 	String y;
-	
 
 	//@Indexed(indexType = IndexType.FULLTEXT, indexName = "searchByName")
 	String name;
@@ -48,8 +46,9 @@ public class Area {
 	public void setName(String name) { this.name = name; }
 	public String getX() { return this.x; }
 	public String getY() { return this.y; }
-	public void setX(String x) { this.x = x; }
+	public void setX(String x) {this.x = x; }
 	public void setY(String y) { this.y = y; }
+	
 	/*
 	public String getCoords() { return this.coords; }
 	public void setCoords(String x, String y) { this.coords = x; }

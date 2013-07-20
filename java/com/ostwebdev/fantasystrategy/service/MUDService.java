@@ -48,8 +48,6 @@ public class MUDService
 		System.out.println("Configure");
 		channel.addAuthorizer(new Authorizer()
 		{
-
-			@Override
 			public Result authorize(Operation operation, ChannelId channel,
 					ServerSession session, ServerMessage message) {
 				User user = (User) bayeux.getContext().getHttpSessionAttribute("user");
@@ -74,7 +72,7 @@ public class MUDService
 		User user = (User) bayeux.getContext().getHttpSessionAttribute("user");
 
 		CommandRunner runner = new CommandRunner();
-		//runner.addAttribute("user",  user);
+		runner.addAttribute("user",  user);
 		
 		System.out.println(data.keySet());
 		

@@ -1,7 +1,9 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="false" %>
 <ul class="nav nav-tabs nav-stacked">
 	<li><a href="${pageContext.request.contextPath}/">Home</a></li>
-	<li><a href="${pageContext.request.contextPath}/areas/">Areas</a></li>
-	<li><a href="${pageContext.request.contextPath}/quests/">Quests</a></li>
-	<li><a href="${pageContext.request.contextPath}/items/">Items</a></li>
-	<li><a href="${pageContext.request.contextPath}/players/">Players</a></li>
+	<li><a href="${pageContext.request.contextPath}/area/">Areas</a></li>
+	<li><a href="${pageContext.request.contextPath}/quest/">Quests</a></li>
+	<li><a href="${pageContext.request.contextPath}/item/">Items</a></li>
+	<li><a href="${pageContext.request.contextPath}/player/">Players</a></li>
 </ul>

@@ -4,7 +4,7 @@
 <h2>Area List</h2>
 <ul class="unstyled">
 <c:forEach items="${areas}" var="area">
-	<li><a href="${pageContext.request.contextPath}/areas/${area.id}">${area.name}</a></li>
+	<li><a href="${pageContext.request.contextPath}/area/${area.id}">${area.name}</a></li>
 </c:forEach>
 </ul>
 <c:import url="../include/footer.jsp"></c:import>
