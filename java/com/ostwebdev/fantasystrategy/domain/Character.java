@@ -3,6 +3,7 @@ package com.ostwebdev.fantasystrategy.domain;
 import java.util.HashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.NodeEntity;
 
 import com.ostwebdev.fantasystrategy.game.character.Attribute;
@@ -10,6 +11,8 @@ import com.ostwebdev.fantasystrategy.repository.AreaRepository;
 
 @NodeEntity
 public class Character {
+	@GraphId private Long id;
+	
 	public Item[] items;
 	public Area area;
 	
