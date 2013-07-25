@@ -2,6 +2,7 @@ package com.ostwebdev.fantasystrategy.controller;
 
 import java.util.Locale;
 
+import java.awt.List;
 import java.awt.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.conversion.EndResult;
@@ -22,7 +23,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ostwebdev.fantasystrategy.domain.*;
 import com.ostwebdev.fantasystrategy.repository.QuestRepository;
-import com.ostwebdev.fantasystrategy.repository.AreaRepository;
+import com.ostwebdev.fantasystrategy.repository.SquareRepository;
 //import com.ostwebdev.fantasystrategy.repository.*;
 
 @Controller
@@ -30,15 +31,13 @@ import com.ostwebdev.fantasystrategy.repository.AreaRepository;
 public class AdminController {
 	//@Autowired
 	//private Neo4jDatabasePopulator populator;
-	@Autowired private AreaRepository areaRepository;
+	@Autowired private SquareRepository squareRepository;
 	@Autowired private Neo4jOperations template;
 	
 	
 	@RequestMapping(value = "/user-init", method = RequestMethod.GET)
 	public String userInit(ModelMap modelMap) {
 		User user = new User();
-		user.id = 1234;
-		user.foo = 0;
 		modelMap.addAttribute(user);
 		return "admin/home";
 	}
@@ -54,15 +53,15 @@ public class AdminController {
 
 	@RequestMapping(value = "/admin/area", method = RequestMethod.GET)
 	public String area(Model model) {
-		EndResult<Area> areas = areaRepository.findAll();
+		EndResult<Square> areas = squareRepository.findAll();
 		model.addAttribute("areas",areas.iterator());
 		return "admin/area/areaList";
 	}
 	
 	@RequestMapping(value = "/admin/area/{id}", method = RequestMethod.GET)
-	public String area(@ModelAttribute("area") Area area, @PathVariable Long id, Model model) throws Exception {
+	public String area(@ModelAttribute("area") Square area, @PathVariable Long id, Model model) throws Exception {
 		if(id != 0) {
-			area = areaRepository.findById(id);
+			area = squareRepository.findById(id);
 			if(area != null) {
 				System.out.println(area.getName());
 				model.addAttribute("area", area);
@@ -70,27 +69,28 @@ public class AdminController {
 				throw new Exception("Area not found");
 			}
 		} else {
-			model.addAttribute("area", new Area());
+			model.addAttribute("area", new Square());
 		}
 		return "admin/area/areaDetail";
 	}
 	
 	@RequestMapping(value = "/admin/area/{id}", method = RequestMethod.POST)
 	public String area_save(@PathVariable Long id, @RequestParam("name") String name, @RequestParam("x") String x, @RequestParam("y") String y) throws Exception {
-		Area area;
+		Square area;
 		if(id != 0) {
-			area = areaRepository.findById(id);
+			area = squareRepository.findById(id);
 			if(area == null) {
 				throw new Exception("Area not found");
 			}
 		} else {
-			area = new Area();
+			area = new Square();
 		}		
 		
 		area.setName(name);
-		area.setX(x);
-		area.setY(y);
-		areaRepository.save(area);
+		area.setByCoords(Integer.valueOf(x), Integer.valueOf(y));
+		//area.setX(x);
+		//area.setY(y);
+		squareRepository.save(area);
 
 		return "admin/area/areaList";
 	}
@@ -106,5 +106,42 @@ public class AdminController {
 		//EndResult<?> areas = repo.findAll();
 		//model.addAttribute("areas",areas.iterator());
 		return "admin/area/areaList";
+	}
+	
+	@RequestMapping(value = "/admin/populateAreas", method = RequestMethod.GET)
+	public String populateAreas(Model model) throws Exception {
+		Square area1 = new Square();
+		area1.setName("Area 1");
+		area1.setRegion(0);
+		area1.setByCoords(0,  0);
+		squareRepository.save(area1);
+		
+		Square area2 = new Square();
+		area2.setName("Area 2");
+		area2.setRegion(0);
+		area2.setByCoords(0,  1);
+		area2.addAdjacentSquare(area1);
+		squareRepository.save(area2);
+		
+		Square area3 = new Square();
+		area3.setName("Area 3");
+		area3.setRegion(0);
+		area3.setByCoords(0, 2);
+		area3.addAdjacentSquare(area2);		
+		squareRepository.save(area3);
+
+		return "admin/home";
+	}
+	
+	@RequestMapping(value = "/admin/listsquares", method = RequestMethod.GET)
+	public String listSquares(Model model) throws Exception {
+		Square square = squareRepository.findByCoords(0, 0);
+		System.out.println(square.getX() + ", " + square.getY());
+		System.out.println("Related Items:");
+		for(Square s : square.getAdjacentSquares()) {
+			System.out.println(s.getX() + ", " + s.getY());
+		}
+		return "admin/home";
+		
 	}
 }

@@ -20,8 +20,8 @@ public class Quest {
 		this.name = string;
 	}
 	
-	@RelatedTo(elementClass = Area.class, type = "CONTAINED_BY", direction = Direction.INCOMING)
-	Area area;
+	@RelatedTo(elementClass = Square.class, type = "CONTAINED_BY", direction = Direction.INCOMING)
+	Square area;
 	
 	public String getName() { return name; }
 	public String getContent() { return content; }

@@ -5,20 +5,20 @@ import org.springframework.data.neo4j.template.Neo4jOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ostwebdev.fantasystrategy.domain.Area;
+import com.ostwebdev.fantasystrategy.domain.Square;
 import com.ostwebdev.fantasystrategy.domain.Quest;
-import com.ostwebdev.fantasystrategy.repository.AreaRepository;
+import com.ostwebdev.fantasystrategy.repository.SquareRepository;
 import com.ostwebdev.fantasystrategy.repository.QuestRepository;
 
 @Service
 public class Neo4jDatabasePopulator {
-	@Autowired AreaRepository areaRepository;
+	@Autowired SquareRepository areaRepository;
 	@Autowired QuestRepository questRepository;
 	@Autowired Neo4jOperations template;
 	
 	
 	public void populateDatabase() {
-		Area area1 = new Area((long) 1, "Test Area");
+		Square area1 = new Square((long) 1, "Test Area");
 		areaRepository.save(area1);		
 		
 		/*

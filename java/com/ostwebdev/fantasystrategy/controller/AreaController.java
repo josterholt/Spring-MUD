@@ -11,26 +11,26 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.ostwebdev.fantasystrategy.domain.Area;
+import com.ostwebdev.fantasystrategy.domain.Square;
 import com.ostwebdev.fantasystrategy.domain.Game;
-import com.ostwebdev.fantasystrategy.repository.AreaRepository;
+import com.ostwebdev.fantasystrategy.repository.SquareRepository;
 
 @Controller
 public class AreaController {
 	@Autowired
-	AreaRepository areaRepository;
+	SquareRepository areaRepository;
 	
 	
 	@RequestMapping(value = "/areas", method = RequestMethod.GET)
 	public String areas(Model model) {
-		EndResult<Area> areas = areaRepository.findAll();		
+		EndResult<Square> areas = areaRepository.findAll();		
 		model.addAttribute("areas", areas.iterator());
 		return "areas/areaList";
 	}
 	
 	@RequestMapping(value = "/areas/{id}", method = RequestMethod.GET)
 	public String areas(Model model, @PathVariable Long id) {
-		Area area = areaRepository.findById(id);
+		Square area = areaRepository.findById(id);
 		
 		model.addAttribute("area", area);
 		return "areas/areaDetail";

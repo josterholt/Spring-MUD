@@ -18,6 +18,9 @@ public class UserDetailServiceImpl implements UserDetailsService, InitializingBe
 	{
 		try {
 			User user = userRepo.findByUsername(username);
+			if(user == null) {
+				return new User();
+			}
 			return user;
 		} catch(Exception e) {
 			System.out.println(e.toString());
