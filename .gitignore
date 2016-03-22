@@ -1,7 +1,7 @@
 target
 .settings
 .project
-deploy
-deploy-war
-neo4j
+deploy.log
+deploy-war.log
+neo4j.log
 data/rpg.db
